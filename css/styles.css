@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border:5px solid red;
+  transition: background-color 0.3s ease;
+}
+.target
+{
+  width:20%;
+}
+.text
+{
+  width:80%;
+}
+#text {
+  display: none;
+  font-size: 1.2rem;
+  float: right;
+  animation: slideInLeft 3s backwards;
+}
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: gray;
+}
+
+#message {
+  font-size: 24px;
+  margin-top: 20px;
+}
+#message2
+{
+  width: 42%;
+  float: right;
+  margin-top: -10%;
+  font-size: 1.5rem;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.question {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#guess-input {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+section {
+  background-color: #F8F8F8;
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: slideInLeft 1s forwards;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.mainpic
+{
+  width:10%;
+  height:10%;
+}
+.profile .bio {
+  margin-left: 20px;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  animation: bounceIn 0.5s;
+  animation-delay: calc(0.1s * var(--index));
+  animation-fill-mode: backwards;
+}
+
+@keyframes bounceIn {
+  from { opacity: 0; transform: scale(0.5); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.job {
+  margin-bottom: 20px;
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project {
+  margin-bottom: 20px;
+  animation: fadeInUp 1s forwards;
+}
+
+footer {
+  background-color: #222;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Add more custom styles as needed */
